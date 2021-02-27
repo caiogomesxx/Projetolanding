@@ -1,8 +1,33 @@
+:root {
+  --title: #1E1E1E;
+  --text-secondary: #AAAAAA;
+  --text-tertiary: #C4C4C4;
+
+  --primary: #049492;
+  --secondary: #FF9492;
+
+  --background: #F5F5F5
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: Roboto, Helvetica Neue, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 100vh;
 }
 
 a {
@@ -10,6 +35,3 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
