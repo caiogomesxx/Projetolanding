@@ -3,16 +3,13 @@
   max-width: 400px;
   min-height: 270px;
   padding: 32px;
-  margin: 9px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: red;
   border-radius: 5px;
   background: #fdfdfd;
   box-shadow: 5px 5px 10px rgb(3 27 78 / 2%), -5px -5px 10px rgb(3 27 78 / 2%);
-  cursor: pointer;
   transition: 0.5s box-shadow;
 }
 
