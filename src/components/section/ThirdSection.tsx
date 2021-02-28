@@ -5,14 +5,44 @@ import Card from '../shared/Card'
 export default function ThirdSection(): JSX.Element {
   return (
     <section>
-      <h1 className={styles.title}>Quais são nossas vantagens?</h1>
+      <h1 className={styles.title}>Por que investir com o Patinhas?</h1>
       <article className={styles.cardContainer}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          title="Day Trade"
+          desc="Operações diárias alavancadas"
+          beforeValue={1}
+          actuallyValue={0}
+        />
+        <Card
+          title="Day Trade"
+          desc="Operações diárias alavancadas"
+          beforeValue={1}
+          actuallyValue={0}
+        />
+        <Card
+          title="Day Trade"
+          desc="Operações diárias alavancadas"
+          beforeValue={1}
+          actuallyValue={0}
+        />
+        <Card
+          title="Day Trade"
+          desc="Operações diárias alavancadas"
+          beforeValue={1}
+          actuallyValue={0}
+        />
+        <Card
+          title="Day Trade"
+          desc="Operações diárias alavancadas"
+          beforeValue={1}
+          actuallyValue={0}
+        />
+        <Card
+          title="Day Trade"
+          desc="Operações diárias alavancadas"
+          beforeValue={1}
+          actuallyValue={0}
+        />
       </article>
     </section>
   )

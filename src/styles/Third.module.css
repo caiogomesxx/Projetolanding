@@ -1,9 +1,10 @@
 .title {
   color: #031b4e;
   font-family: Montserrat;
-  text-align: center;
-  max-width: 80%;
+  text-align: left;
   font-size: 20pt;
+  font-weight: 300;
+  max-width: 90%;
 }
 
 .cardContainer {
@@ -14,4 +15,12 @@
   justify-content: center;
   margin-top: 4%;
   padding: 0 5px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    max-width: 80%;
+    font-size: 25pt;
+    text-align: center;
+  }
 }
