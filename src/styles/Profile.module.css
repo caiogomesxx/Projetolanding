@@ -1,0 +1,26 @@
+.title {
+  color: #031b4e;
+  font-family: Montserrat;
+  font-weight: 300;
+  text-align: left;
+  font-size: 20pt;
+  width: 90%;
+}
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+  padding: 0 5px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 28pt;
+    text-align: center;
+    width: 70%;
+  }
+}
