@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Formik, ErrorMessage } from 'formik';
 import MaskedInput from 'react-text-mask';
-
 import styles from '../../styles/Fourth.module.css';
-
 import { Button } from '../form/Button';
 import { Input } from '../form/Input';
 
