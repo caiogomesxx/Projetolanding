@@ -1,0 +1,69 @@
+/*
+Todo o corpo da Primeira Section, contendo o header
+*/
+.Bodies{
+  height: 100vh;
+  background-image: linear-gradient(180deg, #049492 40.1%, #049492, #FF9492 100%);
+}
+
+/*
+Espacamento entre os cards
+*/
+.cards{
+  padding: 0 50px 0 0;
+}
+
+/*
+Todos os Cards
+*/
+.big_cards{
+  display: flex;
+  margin-top: 100px;
+}
+
+/*
+Todo o corpo da Primeira Section, excluido o header
+*/
+.big_body{
+  display: flex;
+}
+
+
+/*
+Texto e cards
+*/
+.text_and_cards{
+  display: flex;
+  flex-direction: column;
+  
+
+  padding: 100px 0 30px 70px;
+}
+
+
+/*
+h1 dos cards
+*/
+.text h1{
+  color: white; 
+  font-size: 24px;
+  padding: 0 100px 0 0;
+  font-family: Montserrat;
+}
+
+/*
+p dos cards
+*/
+.text p{
+  color: #ffffffbb;
+}
+
+/*
+Image
+*/
+.img{
+  width: 400px;
+  height: 400px;
+  padding: 150px 100px 0 0;
+}
+

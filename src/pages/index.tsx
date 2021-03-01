@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import { FirstSection } from '../components/section/FirstSection'
+import { SecondSection } from '../components/section/SecondSection'
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
         <title>Patinhas Bank</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <FirstSection />
+      <SecondSection />
     </>
   )
 }

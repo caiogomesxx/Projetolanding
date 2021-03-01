@@ -1,0 +1,36 @@
+.header_body {
+  background-color: transparent;
+  color:white;
+  width: 100%;
+
+  position: fixed;
+  z-index: 2;
+  padding: 10px;
+}
+
+.items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 40px;
+}
+
+.logo{
+  width: 35px;
+  height: 35px;
+}
+
+.button{
+  margin-right: 450px;
+}
+
+.button button{
+  margin: 0 50px 0 0px;
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  outline:none;
+  font-size: 1.5rem;
+}
+
