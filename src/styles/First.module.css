@@ -1,0 +1,98 @@
+/*
+Todo o corpo da Primeira Section, contendo o header
+*/
+.Bodies {
+  background-image: linear-gradient(#049492 40.1%, #049492, #ff9492 100%);
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 8%;
+}
+
+/*
+Espacamento entre os cards
+*/
+
+/*
+Todos os Cards
+*/
+.big_cards {
+  display: none;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.big_cardsMobile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/*
+Texto e cards
+*/
+.text_and_cards {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/*
+h1 dos cards
+*/
+.text h1 {
+  color: white;
+  font-size: 24px;
+  font-family: Montserrat;
+}
+
+/*
+p dos cards
+*/
+.text p {
+  color: #ffffffbb;
+}
+
+/*
+Image
+*/
+.imgContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 320px;
+}
+
+@media (min-width: 950px) {
+}
+
+@media (min-width: 1190px) {
+  .text_and_cards {
+    display: flex;
+    padding: 100px 0 30px 70px;
+  }
+
+  .imgContainer {
+    margin-top: 70px;
+  }
+
+  .Bodies {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .big_cards {
+    justify-content: flex-start;
+    margin-top: 100px;
+    display: flex;
+  }
+
+  .big_cardsMobile {
+    display: none;
+  }
+}
