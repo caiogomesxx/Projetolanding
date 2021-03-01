@@ -1,3 +1,7 @@
+.container {
+  justify-content: space-around;
+}
+
 .title {
   color: #031b4e;
   font-family: Montserrat;
