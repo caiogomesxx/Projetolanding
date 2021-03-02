@@ -18,6 +18,7 @@ function FourthSection(): JSX.Element {
     /\d/,
     /\d/,
     /\d/,
+    /\d/,
     "-",
     /\d/,
     /\d/,
@@ -27,7 +28,6 @@ function FourthSection(): JSX.Element {
 
   return (
     <section id={styles.fourth_section}>
-      <div>
         <div className={styles.title_container}>
           <h1>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, nisi repudiandae! Quia,
@@ -41,15 +41,7 @@ function FourthSection(): JSX.Element {
         </div>
         <div className={styles.form_container}>
           <Formik
-            onSubmit={(value) => {
-              const changedValue = value.telefone
-                .replace(/\)/g, '')
-                .replace(/\(/g, '')
-                .replace(/-/g, '')
-                .replace(/ /g, '');
-
-              alert('hoa')
-            }}
+            onSubmit={() => console.log("Submited")}
             initialValues={{
               name: '',
               email: '',
@@ -73,7 +65,6 @@ function FourthSection(): JSX.Element {
                     name="phone"
                     onChange={e => {
                       const value = e.target.value || '';
-                      console.log({ value });
                       setFieldValue('phone', value);
                     }}
                     style={{
@@ -91,7 +82,7 @@ function FourthSection(): JSX.Element {
                   <ErrorMessage name="telefone" />
                 </div>
                 <div>
-                  <textarea placeholder="mensagem" />
+                  <textarea placeholder="Mensagem" />
                   <ErrorMessage name="mensagem" />
                 </div>
                 <Button disabled={isSubmitting}>Enviar</Button>
@@ -99,7 +90,6 @@ function FourthSection(): JSX.Element {
             )}
           </Formik>
         </div>
-      </div>
     </section>
   );
 }

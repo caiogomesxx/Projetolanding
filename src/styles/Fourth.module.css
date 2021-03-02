@@ -1,5 +1,5 @@
 #fourth_section {
-  background: linear-gradient(180deg, #FFFFFF 6.25%, #B6E3E2 40.63%, #7FCDCC 54.69%, #049492 85.94%);
+  background: linear-gradient(180deg, #FFFFFF 6.25%, #049492 40.63%, #049492 54.69%, #049492 85.94%);
 
   align-items: center;
   justify-content: center;
@@ -15,18 +15,6 @@
   text-align: center;
 }
 
-.input_group { 
-  display: flex;
-}
-
-.input_group input:first-child {
-  width: 65%;
-}
-
-.input_group input:last-child {
-  width: 35%;
-}
-
 .form_container form {
   display: flex;
   flex-direction: column;
@@ -35,7 +23,7 @@
 }
 
 .form_container form textarea {
-  padding: 28px 48px;
+  padding: 28px 52px;
   margin: 5px;
 
   border-radius: 5px;
@@ -52,11 +40,7 @@
 
 #fourth_section h1 {
   color: #fff;
-  font-family: Montserrat;
-
-  margin-left: 256px;
-  width: 80%;
-  text-align: left;
+  font-family: Montserrat;  
 }
 
 #fourth_section h3 {

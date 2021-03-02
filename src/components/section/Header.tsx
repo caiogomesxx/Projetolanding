@@ -61,9 +61,6 @@ function Header(): JSX.Element {
       </List>
     </div>
   )
-  useEffect(() => {
-    console.log(window.innerWidth)
-  }, [window.innerWidth])
 
   return (
     <header className={styles.header_body}>
