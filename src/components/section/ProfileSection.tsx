@@ -1,39 +1,119 @@
-import dynamic from 'next/dynamic'
-import React from 'react'
+import { FaRegArrowAltCircleLeft } from '@react-icons/all-files/fa/FaRegArrowAltCircleLeft'
+import { FaRegArrowAltCircleRight } from '@react-icons/all-files/fa/FaRegArrowAltCircleRight'
+import React, { useState } from 'react'
+import Carousel from 'react-simply-carousel'
+import CotemigIMG from '../../assets/company/cotemig.png'
+import FrameIMG from '../../assets/company/logo_system.png'
+import PlusdinIMG from '../../assets/company/plusdin.png'
+import SyngentaIMG from '../../assets/company/syngenta.png'
+import cardStyles from '../../styles/components/Profilecard.module.css'
 import styles from '../../styles/Profile.module.css'
-import Card from '../shared/Card'
-
-const ReactCardCarousel = dynamic(() => import('react-card-carousel'), {
-  ssr: false
-})
-
+import ProfileCard from '../shared/ProfileCard'
 export default function ProfileSection(): JSX.Element {
+  const [slide, setSlide] = useState(0)
+
   return (
-    <section style={{ position: 'relative' }}>
+    <section className={styles.section}>
       <h1 className={styles.title}>
         Quem são os responsáveis pelas riquezas do patinhas
       </h1>
       <div className={styles.relativeCardContainer}>
-        <ReactCardCarousel spread="wide" autoplay={true} autoplay_speed={2500}>
-          <Card
-            title="Day Trade"
-            desc="Operações diárias alavancadas"
-            beforeValue={1}
-            actuallyValue={0}
+        <Carousel
+          activeSlideIndex={slide}
+          onRequestChange={setSlide}
+          centerMode
+          containerProps={{
+            style: {
+              width: '100%',
+              display: 'flex',
+              justifyContent: 'center',
+              marginLeft: '-12px'
+            }
+          }}
+          forwardBtnProps={{
+            children: <FaRegArrowAltCircleRight size={40} color="#049492" />,
+            style: {
+              width: 30,
+              height: 30,
+              alignSelf: 'center',
+              backgroundColor: 'transparent',
+              border: 'none',
+              zIndex: 1,
+              cursor: 'pointer'
+            }
+          }}
+          backwardBtnProps={{
+            children: <FaRegArrowAltCircleLeft size={40} color="#049492" />,
+            style: {
+              width: 30,
+              height: 30,
+              marginRight: '9px',
+              alignSelf: 'center',
+              backgroundColor: 'transparent',
+              border: 'none',
+              zIndex: 1,
+              cursor: 'pointer'
+            }
+          }}
+          speed={400}
+          itemsToShow={1}
+          itemsToScroll={1}
+          responsiveProps={[
+            { minWidth: 1200, itemsToShow: 3 },
+            { maxWidth: 1199, itemsToShow: 2 },
+            { maxWidth: 800, itemsToShow: 1 }
+          ]}
+        >
+          <ProfileCard
+            name="Rafael Augusto Pena"
+            desc="Mobile Developer"
+            profile={cardStyles.rafael}
+            company={FrameIMG}
+            companySecondary={SyngentaIMG}
           />
-          <Card
-            title="Day Trade"
-            desc="Operações diárias alavancadas"
-            beforeValue={1}
-            actuallyValue={0}
+          <ProfileCard
+            name="Fernando Rodrigues"
+            desc="Backend Developer"
+            profile={cardStyles.fernando}
+            company={PlusdinIMG}
           />
-          <Card
-            title="Day Trade"
-            desc="Operações diárias alavancadas"
-            beforeValue={1}
-            actuallyValue={0}
+          <ProfileCard
+            name="Arthur"
+            desc="Frontend Developer"
+            profile={cardStyles.arthur}
+            company={CotemigIMG}
           />
-        </ReactCardCarousel>
+          <ProfileCard
+            name="Vinicius Benites"
+            desc="Frontend Developer"
+            profile={cardStyles.vinicius}
+            company={CotemigIMG}
+          />
+          <ProfileCard
+            name="Caio"
+            desc="Frontend Developer"
+            profile={cardStyles.caio}
+            company={CotemigIMG}
+          />
+          <ProfileCard
+            name="Darhos"
+            desc="Frontend Developer"
+            profile={cardStyles.darhos}
+            company={CotemigIMG}
+          />
+          <ProfileCard
+            name="Artur"
+            desc="Frontend Developer"
+            profile={cardStyles.artur}
+            company={CotemigIMG}
+          />
+          <ProfileCard
+            name="Vitória de Lourdes"
+            desc="Frontend Developer"
+            profile={cardStyles.vitoria}
+            company={CotemigIMG}
+          />
+        </Carousel>
       </div>
     </section>
   )

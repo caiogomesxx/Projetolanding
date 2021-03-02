@@ -5,13 +5,14 @@
   text-align: left;
   font-size: 20pt;
   width: 90%;
-  margin-bottom: 1%;
 }
 
 .relativeCardContainer {
-  position: relative;
   width: 100%;
-  margin-top: 50%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardContainer {
@@ -24,28 +25,10 @@
   padding: 0 5px;
 }
 
-@media (min-width: 900px) {
-  .relativeCardContainer {
-    margin-top: 20%;
-  }
-}
-
-@media (max-width: 900px) {
-  .relativeCardContainer {
-    margin-top: 30%;
-  }
-}
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 658px) {
   .title {
     font-size: 28pt;
     text-align: center;
     width: 70%;
-  }
-}
-
-@media (max-width: 600px) {
-  .relativeCardContainer {
-    margin-top: 50%;
   }
 }
