@@ -12,6 +12,7 @@
     "@material-ui/icons": "^4.11.2",
     "@react-icons/all-files": "^4.1.0",
     "antd": "^4.12.3",
+    "formik": "^2.2.6",
     "next": "10.0.7",
     "next-images": "^1.7.0",
     "react": "17.0.1",

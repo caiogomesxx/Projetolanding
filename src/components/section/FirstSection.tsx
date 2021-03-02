@@ -3,10 +3,12 @@ import tioPatinhas from '../../assets/tiopatinhas.png'
 import stylesCards from '../../styles/Cards.module.css'
 import styles from '../../styles/First.module.css'
 import { Cards } from './Cards'
+import { Header } from './Header'
 
 function FirstSection(): JSX.Element {
   return (
     <section className={styles.Bodies}>
+      <Header />
       <div className={styles.text_and_cards}>
         <div className={styles.text}>
           <h1>Lorem ipsum malesuada volutpat hendrerit risus, metus integer</h1>
