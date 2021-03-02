@@ -123,8 +123,10 @@
   }
   .cardContent {
     width: 100%;
-    min-width: 310px;
+    min-width: 280px;
     margin: 0;
+    padding: 15px;
+    padding-bottom: 180px;
   }
 
   .fernando,
@@ -142,7 +144,7 @@
 @media (max-width: 360px) {
   .cardContent {
     width: 100%;
-    min-width: 280px;
+    min-width: 250px;
     margin: 0;
   }
 }
@@ -151,6 +153,14 @@
   .cardContent {
     width: 100%;
     min-width: 240px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 324px) {
+  .cardContent {
+    width: 100%;
+    min-width: 200px;
     margin: 0;
   }
 }

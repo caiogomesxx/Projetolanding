@@ -5,7 +5,7 @@ import ListItemText from '@material-ui/core/ListItemText'
 import { makeStyles } from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
 import clsx from 'clsx'
-import React, { useEffect } from 'react'
+import React from 'react'
 import styles from '../../styles/Header.module.css'
 
 function Header(): JSX.Element {
@@ -53,7 +53,7 @@ function Header(): JSX.Element {
           'Vantagens',
           'Quem somos',
           'Contato'
-        ].map((text, index) => (
+        ].map(text => (
           <ListItem button key={text}>
             <ListItemText primary={text} />
           </ListItem>
@@ -61,9 +61,6 @@ function Header(): JSX.Element {
       </List>
     </div>
   )
-  useEffect(() => {
-    console.log(window.innerWidth)
-  }, [window.innerWidth])
 
   return (
     <header className={styles.header_body}>

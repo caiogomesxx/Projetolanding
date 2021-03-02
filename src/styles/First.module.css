@@ -42,7 +42,7 @@ h1 dos cards
 */
 .text h1 {
   color: white;
-  font-size: 24px;
+  font-size: 22pt;
   font-family: Montserrat;
 }
 
@@ -51,6 +51,7 @@ p dos cards
 */
 .text p {
   color: #ffffffbb;
+  font-size: 19pt;
 }
 
 /*
@@ -64,10 +65,7 @@ Image
 }
 
 .img {
-  width: 320px;
-}
-
-@media (min-width: 950px) {
+  width: 280px;
 }
 
 @media (min-width: 1190px) {
@@ -94,5 +92,15 @@ Image
 
   .big_cardsMobile {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .Bodies {
+    padding: 4%;
+    padding-top: 55px;
+  }
+  .img {
+    width: 265px;
   }
 }
