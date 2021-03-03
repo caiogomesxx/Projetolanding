@@ -1,5 +1,9 @@
+.body {
+  align-items: flex-start;
+}
+
 .triangulo {
   border-style: solid;
-  border-width: 565px 98vw 0 0;
+  border-width: 565px 98.5vw 0 0;
   border-color: #ff9492 transparent transparent transparent;
 }
