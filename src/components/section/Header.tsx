@@ -66,9 +66,11 @@ function Header(): JSX.Element {
     <header className={styles.header_body}>
       <div className={styles.logo}></div>
       <div className={styles.button}>
-        <button className={styles.buttonChild}>Integer</button>
-        <button className={styles.buttonChild}>Integer</button>
-        <button className={styles.buttonChild}>Integer</button>
+        <button className={styles.buttonChild}>Início</button>
+        <button className={styles.buttonChild}>Nossa investidora</button>
+        <button className={styles.buttonChild}>Vantagens</button>
+        <button className={styles.buttonChild}>Quem somos</button>
+        <button className={styles.buttonChild}>Contato</button>
       </div>
       <div className={styles.drawerButton}>
         <Button onClick={toggleDrawer('right', true)}>

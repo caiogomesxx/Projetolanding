@@ -12,8 +12,6 @@ export default function Home() {
         <title>Patinhas Bank</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-
       <FirstSection />
       <SecondSection />
       <FourthSection />
