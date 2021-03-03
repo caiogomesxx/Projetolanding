@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
 import clsx from 'clsx'
 import React from 'react'
+import LogoIMG from '../../assets/logo.png'
 import styles from '../../styles/Header.module.css'
 
 function Header(): JSX.Element {
@@ -64,7 +65,7 @@ function Header(): JSX.Element {
 
   return (
     <header className={styles.header_body}>
-      <div className={styles.logo}></div>
+      <img src={LogoIMG} className={styles.logo} />
       <div className={styles.button}>
         <button className={styles.buttonChild}>Início</button>
         <button className={styles.buttonChild}>Nossa investidora</button>
