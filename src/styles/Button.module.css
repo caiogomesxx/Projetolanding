@@ -2,7 +2,7 @@
   outline: 0;
   border: 0;
 
-  margin: 15px;
+  margin: 15px 0 15px 0;
   padding: 16px 46px;
 
   border-radius: 5px;
@@ -12,5 +12,5 @@
   font-weight: 700;
   font-family: Montserrat;
 
-  background:var(--secondary);
+  background: var(--secondary);
 }

@@ -1,52 +1,49 @@
-import React, { useState } from 'react';
-import { Formik, ErrorMessage } from 'formik';
-import MaskedInput from 'react-text-mask';
-
-import styles from '../../styles/Fourth.module.css';
-
-import { Button } from '../form/Button';
-import { Input } from '../form/Input';
+import { ErrorMessage, Formik } from 'formik'
+import React from 'react'
+import MaskedInput from 'react-text-mask'
+import styles from '../../styles/Fourth.module.css'
+import { Button } from '../form/Button'
+import { Input } from '../form/Input'
 
 function FourthSection(): JSX.Element {
   const phoneNumberMask = [
-    "(",
+    '(',
     /\d/,
     /\d/,
-    ")",
-    " ",
+    ')',
+    ' ',
     /\d/,
     /\d/,
     /\d/,
     /\d/,
     /\d/,
-    "-",
+    '-',
     /\d/,
     /\d/,
     /\d/,
     /\d/
-  ];
+  ]
 
   return (
     <section id={styles.fourth_section}>
       <div className={styles.title_container}>
         <h1> Queremos te conhecer !! </h1>
-
         <h3>
-          Preencha o formulário abaixo para nossa empresa e deixe também um feedback do que achou do nosso site até agora!
+          Preencha o formulário abaixo para nossa empresa e deixe também um
+          feedback do que achou do nosso site até agora!
         </h3>
-
       </div>
       <div className={styles.form_container}>
         <Formik
-          onSubmit={() => console.log("Submited")}
+          onSubmit={() => console.log('Submited')}
           initialValues={{
             name: '',
             email: '',
             telefone: '',
-            mensagem: '',
+            mensagem: ''
           }}
         >
-          {({ isSubmitting, values, setFieldValue }) => (
+          {({ isSubmitting, setFieldValue }) => (
             <form>
               <div>
                 <Input placeholder="Nome" />
@@ -61,18 +58,19 @@ function FourthSection(): JSX.Element {
                   mask={phoneNumberMask}
                   name="phone"
                   onChange={e => {
-                    const value = e.target.value || '';
-                    setFieldValue('phone', value);
+                    const value = e.target.value || ''
+                    setFieldValue('phone', value)
                   }}
                   style={{
-                    padding: "12px 36px",
-                    margin: "5px",
-                    borderRadius: "5px",
-                    outline: "0",
-                    border: "0",
-                    textAlign: "center",
-                    fontSize: "15px",
-                    lineHeight: "16px",
+                    width: '100%',
+                    padding: '12px 36px',
+                    marginTop: '10px',
+                    borderRadius: '5px',
+                    outline: '0',
+                    border: '0',
+                    textAlign: 'center',
+                    fontSize: '15px',
+                    lineHeight: '16px'
                   }}
                   placeholder="Telefone"
                 />
@@ -88,7 +86,7 @@ function FourthSection(): JSX.Element {
         </Formik>
       </div>
     </section>
-  );
+  )
 }
 
-export { FourthSection };
+export { FourthSection }
