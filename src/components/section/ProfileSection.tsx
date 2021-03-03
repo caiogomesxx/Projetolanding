@@ -78,7 +78,13 @@ export default function ProfileSection(): JSX.Element {
             company={PlusdinIMG}
           />
           <ProfileCard
-            name="Arthur"
+            name="Darhos Gabriel"
+            desc="Frontend Developer"
+            profile={cardStyles.darhos}
+            company={CotemigIMG}
+          />
+          <ProfileCard
+            name="Arthur Santiago"
             desc="Frontend Developer"
             profile={cardStyles.arthur}
             company={CotemigIMG}
@@ -90,19 +96,13 @@ export default function ProfileSection(): JSX.Element {
             company={CotemigIMG}
           />
           <ProfileCard
-            name="Caio"
+            name="Caio Fábio"
             desc="Frontend Developer"
             profile={cardStyles.caio}
             company={CotemigIMG}
           />
           <ProfileCard
-            name="Darhos"
-            desc="Frontend Developer"
-            profile={cardStyles.darhos}
-            company={CotemigIMG}
-          />
-          <ProfileCard
-            name="Artur"
+            name="Artur Padua"
             desc="Frontend Developer"
             profile={cardStyles.artur}
             company={CotemigIMG}
