@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/Input.module.css'
+import styles from '../../styles/components/forms/Input.module.css'
 
 interface IInputProps {
   placeholder: string

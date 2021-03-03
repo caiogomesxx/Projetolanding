@@ -1,7 +1,7 @@
 import { ErrorMessage, Formik } from 'formik'
 import React from 'react'
 import MaskedInput from 'react-text-mask'
-import styles from '../../styles/Fourth.module.css'
+import styles from '../../styles/sections/Fourth.module.css'
 import { Button } from '../form/Button'
 import { Input } from '../form/Input'
 
@@ -35,7 +35,7 @@ function FourthSection(): JSX.Element {
       </div>
       <div className={styles.form_container}>
         <Formik
-          onSubmit={() => console.log('Submited')}
+          onSubmit={() => console.log('Submit')}
           initialValues={{
             name: '',
             email: '',

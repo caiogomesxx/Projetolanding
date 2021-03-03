@@ -6,9 +6,9 @@ import CotemigIMG from '../../assets/company/cotemig.png'
 import FrameIMG from '../../assets/company/logo_system.png'
 import PlusdinIMG from '../../assets/company/plusdin.png'
 import SyngentaIMG from '../../assets/company/syngenta.png'
-import cardStyles from '../../styles/components/Profilecard.module.css'
-import styles from '../../styles/Profile.module.css'
-import ProfileCard from '../shared/ProfileCard'
+import cardStyles from '../../styles/components/cards/Profilecard.module.css'
+import styles from '../../styles/sections/Profile.module.css'
+import ProfileCard from '../cards/ProfileCard'
 export default function ProfileSection(): JSX.Element {
   const [slide, setSlide] = useState(0)
 

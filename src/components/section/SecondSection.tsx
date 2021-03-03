@@ -1,9 +1,9 @@
 import React from 'react'
-import stylesCards from '../../styles/Cards.module.css'
-import styles from '../../styles/Second.module.css'
-import { Graphc } from '../section/Graphc'
-import { Line } from '../section/Line'
-import { Cards } from './Cards'
+import stylesExchangeCard from '../../styles/components/cards/ExchangeCard.module.css'
+import styles from '../../styles/sections/Second.module.css'
+import { ExchangeCard } from '../cards/ExchangeCard'
+import { Graphic } from '../graphic/Graphic'
+import { Line } from '../graphic/Line'
 
 const SecondSection: React.FC = () => {
   return (
@@ -17,38 +17,38 @@ const SecondSection: React.FC = () => {
         </h2>
       </div>
       <div className={styles.contentCards}>
-        <Cards white>
-          <div className={stylesCards.whiteTitle}>
+        <ExchangeCard white>
+          <div className={stylesExchangeCard.whiteTitle}>
             <h1>SANB11</h1>
             <p>$38,11</p>
           </div>
-          <div className={stylesCards.acao}>
+          <div className={stylesExchangeCard.acao}>
             <h1>3.14%</h1>
           </div>
-        </Cards>
-        <Cards white>
-          <div className={stylesCards.whiteTitle}>
+        </ExchangeCard>
+        <ExchangeCard white>
+          <div className={stylesExchangeCard.whiteTitle}>
             <h1>VALE3</h1>
             <p>$101,60</p>
           </div>
-          <div className={stylesCards.acao}>
+          <div className={stylesExchangeCard.acao}>
             <h1>-3.07%</h1>
           </div>
-        </Cards>
-        <Cards white>
-          <div className={stylesCards.whiteTitle}>
+        </ExchangeCard>
+        <ExchangeCard white>
+          <div className={stylesExchangeCard.whiteTitle}>
             <h1>AZUL4</h1>
             <p>$38,79</p>
           </div>
-          <div className={stylesCards.red}>
+          <div className={stylesExchangeCard.red}>
             <h1>-3.15%</h1>
           </div>
-        </Cards>
+        </ExchangeCard>
       </div>
       <div className={styles.secondSectionMain}>
         <div className={styles.secondSectionMain2}>
           <Line />
-          <Graphc />
+          <Graphic />
         </div>
       </div>
     </section>

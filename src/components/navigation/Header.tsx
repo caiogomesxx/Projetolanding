@@ -7,7 +7,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import clsx from 'clsx'
 import React from 'react'
 import LogoIMG from '../../assets/logo.png'
-import styles from '../../styles/Header.module.css'
+import styles from '../../styles/components/navigation/Header.module.css'
 
 function Header(): JSX.Element {
   const useStyles = makeStyles({

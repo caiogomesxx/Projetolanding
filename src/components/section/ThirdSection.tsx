@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../../styles/Third.module.css'
-import Card from '../shared/Card'
+import styles from '../../styles/sections/Third.module.css'
+import Card from '../cards/Card'
 
 export default function ThirdSection(): JSX.Element {
   return (

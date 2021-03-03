@@ -1,7 +1,7 @@
 import React from 'react'
-import style from '../../styles/graphc.module.css'
+import style from '../../styles/components/graphic/Graphic.module.css'
 
-const Graphc: React.FC = () => {
+const Graphic: React.FC = () => {
   return (
     <div id={style.container}>
       <div className={style.graficoBarras}>
@@ -40,4 +40,4 @@ const Graphc: React.FC = () => {
   )
 }
 
-export { Graphc }
+export { Graphic }
