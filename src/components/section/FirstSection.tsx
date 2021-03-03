@@ -3,16 +3,17 @@ import tioPatinhas from '../../assets/tiopatinhas.png'
 import stylesCards from '../../styles/Cards.module.css'
 import styles from '../../styles/First.module.css'
 import { Cards } from './Cards'
-import { Header } from './Header'
 
 function FirstSection(): JSX.Element {
   return (
     <section className={styles.Bodies}>
-      <Header />
       <div className={styles.text_and_cards}>
         <div className={styles.text}>
-          <h1>Lorem ipsum malesuada volutpat hendrerit risus, metus integer</h1>
-          <p>Lorem ipsum malesuada volutpat hendrerit risus</p>
+          <h1>Se torne um patinhas e plante uma mudinha</h1>
+          <p>
+            Aqui no Patinhas Bank, a cada 1000 reais investido, uma árvore é
+            plantada
+          </p>
         </div>
         <div className={styles.big_cards}>
           <Cards>
