@@ -1,8 +1,14 @@
 import React from 'react'
 import styles from '../../styles/Cards.module.css'
 
-function Cards({ children }): JSX.Element {
-  return <div className={styles.card}>{children}</div>
+interface CardProps {
+  white?: boolean
 }
 
-export { Cards }
+export const Cards: React.FC<CardProps> = ({ children, white }) => {
+  return (
+    <div className={white ? styles.whiteCard : styles.greenCard}>
+      {children}
+    </div>
+  )
+}
