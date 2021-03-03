@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import React from 'react'
 import { FirstSection } from '../components/section/FirstSection'
+import { FourthSection } from '../components/section/FourthSection'
+import { Header } from '../components/section/Header'
 import { SecondSection } from '../components/section/SecondSection'
 
 export default function Home() {
@@ -12,6 +14,7 @@ export default function Home() {
       </Head>
       <FirstSection />
       <SecondSection />
+      <FourthSection />
     </>
   )
 }
