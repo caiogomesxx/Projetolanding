@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/components/Profilecard.module.css'
+import styles from '../../styles/components/cards/Profilecard.module.css'
 
 interface CardProps {
   name: string

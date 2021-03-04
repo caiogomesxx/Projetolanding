@@ -6,7 +6,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
 import clsx from 'clsx'
 import React from 'react'
-import styles from '../../styles/Header.module.css'
+import LogoIMG from '../../assets/logo.png'
+import styles from '../../styles/components/navigation/Header.module.css'
 
 function Header(): JSX.Element {
   const useStyles = makeStyles({
@@ -64,11 +65,13 @@ function Header(): JSX.Element {
 
   return (
     <header className={styles.header_body}>
-      <div className={styles.logo}></div>
+      <img src={LogoIMG} className={styles.logo} />
       <div className={styles.button}>
-        <button className={styles.buttonChild}>Integer</button>
-        <button className={styles.buttonChild}>Integer</button>
-        <button className={styles.buttonChild}>Integer</button>
+        <button className={styles.buttonChild}>Início</button>
+        <button className={styles.buttonChild}>Nossa investidora</button>
+        <button className={styles.buttonChild}>Vantagens</button>
+        <button className={styles.buttonChild}>Quem somos</button>
+        <button className={styles.buttonChild}>Contato</button>
       </div>
       <div className={styles.drawerButton}>
         <Button onClick={toggleDrawer('right', true)}>

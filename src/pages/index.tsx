@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import React from 'react'
+import { Header } from '../components/navigation/Header'
 import { FirstSection } from '../components/section/FirstSection'
 import { FourthSection } from '../components/section/FourthSection'
-import { Header } from '../components/section/Header'
+import ProfileSection from '../components/section/ProfileSection'
 import { SecondSection } from '../components/section/SecondSection'
+import ThirdSection from '../components/section/ThirdSection'
 
 export default function Home() {
   return (
@@ -13,9 +15,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-
       <FirstSection />
       <SecondSection />
+      <ThirdSection />
+      <ProfileSection />
       <FourthSection />
     </>
   )

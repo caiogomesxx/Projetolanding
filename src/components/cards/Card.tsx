@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 import ReactCardFlip from 'react-card-flip'
-import styles from '../../styles/components/Card.module.css'
+import styles from '../../styles/components/cards/Card.module.css'
 
 interface CardProps {
   title: string
@@ -18,7 +18,7 @@ export default function Card({
 }: CardProps): JSX.Element {
   const [flip, setFlip] = useState(false)
 
-  const onCardClicked = e => {
+  const onCardClicked = (e: FormEvent) => {
     e.preventDefault()
     setFlip(!flip)
   }

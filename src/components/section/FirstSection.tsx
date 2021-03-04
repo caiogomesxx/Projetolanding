@@ -1,78 +1,81 @@
 import React from 'react'
 import tioPatinhas from '../../assets/tiopatinhas.png'
-import stylesCards from '../../styles/Cards.module.css'
-import styles from '../../styles/First.module.css'
-import { Cards } from './Cards'
+import stylesExchangeCard from '../../styles/components/cards/ExchangeCard.module.css'
+import styles from '../../styles/sections/First.module.css'
+import { ExchangeCard } from '../cards/ExchangeCard'
 
 function FirstSection(): JSX.Element {
   return (
     <section className={styles.Bodies}>
       <div className={styles.text_and_cards}>
         <div className={styles.text}>
-          <h1>Lorem ipsum malesuada volutpat hendrerit risus, metus integer</h1>
-          <p>Lorem ipsum malesuada volutpat hendrerit risus</p>
+          <h1>Se torne um patinhas e plante uma mudinha</h1>
+          <p>
+            Aqui no Patinhas Bank, a cada 1000 reais investido, uma árvore é
+            plantada
+          </p>
         </div>
         <div className={styles.big_cards}>
-          <Cards>
-            <div className={stylesCards.tittle}>
+          <ExchangeCard>
+            <div className={stylesExchangeCard.title}>
               <h1>ENEV3</h1>
               <p>$68,00</p>
             </div>
-            <div className={stylesCards.acao}>
+            <div className={stylesExchangeCard.acao}>
               <h1>2.27%</h1>
             </div>
-          </Cards>
-          <Cards>
-            <div className={stylesCards.tittle}>
+          </ExchangeCard>
+          <ExchangeCard>
+            <div className={stylesExchangeCard.title}>
               <h1>VVAR3</h1>
               <p>$11,87</p>
             </div>
-            <div className={stylesCards.red}>
+            <div className={stylesExchangeCard.red}>
               <h1>-6.02%</h1>
             </div>
-          </Cards>
-          <Cards>
-            <div className={stylesCards.tittle}>
+          </ExchangeCard>
+          <ExchangeCard>
+            <div className={stylesExchangeCard.title}>
               <h1>MGLU3</h1>
               <p>$24,18</p>
             </div>
-            <div className={stylesCards.acao}>
+            <div className={stylesExchangeCard.acao}>
               <h1>0.50%</h1>
             </div>
-          </Cards>
+          </ExchangeCard>
         </div>
       </div>
       <div className={styles.imgContainer}>
         <img src={tioPatinhas} alt="mascote" className={styles.img} />
       </div>
-      <div className={styles.big_cardsMobile}>
-        <Cards>
-          <div className={stylesCards.tittle}>
+      <div className={styles.big_ExchangeCardMobile}>
+        <ExchangeCard>
+          <div className={stylesExchangeCard.title}>
             <h1>ENEV3</h1>
             <p>$68,00</p>
           </div>
-          <div className={stylesCards.acao}>
+          <div className={stylesExchangeCard.acao}>
             <h1>2.27%</h1>
           </div>
-        </Cards>
-        <Cards>
-          <div className={stylesCards.tittle}>
+        </ExchangeCard>
+        <ExchangeCard>
+          <div className={stylesExchangeCard.title}>
             <h1>VVAR3</h1>
             <p>$11,87</p>
           </div>
-          <div className={stylesCards.red}>
+          <div className={stylesExchangeCard.red}>
             <h1>-6.02%</h1>
           </div>
-        </Cards>
-        <Cards>
-          <div className={stylesCards.tittle}>
+        </ExchangeCard>
+        <ExchangeCard>
+          <div className={stylesExchangeCard.title}>
             <h1>MGLU3</h1>
             <p>$24,18</p>
           </div>
-          <div className={stylesCards.acao}>
+          <div className={stylesExchangeCard.acao}>
             <h1>0.50%</h1>
           </div>
-        </Cards>
+        </ExchangeCard>
       </div>
     </section>
   )

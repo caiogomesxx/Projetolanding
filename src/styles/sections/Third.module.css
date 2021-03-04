@@ -1,6 +1,6 @@
 .container {
   justify-content: space-around;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .textContent {
@@ -9,23 +9,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 40px 0 20px 0;
 }
 
 .title {
   color: #fff;
   font-family: Montserrat;
   text-align: left;
-  font-size: 20pt;
+  font-size: clamp(1.8rem, 2.8vw, 3rem);
   font-weight: 300;
   max-width: 90%;
   margin: 0;
-  margin-top: 3%;
+  margin: 3% 0 1% 0;
 }
 
 .sub {
   color: #fff;
   text-align: left;
-  font-size: 20pt;
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
   font-weight: 700;
   max-width: 90%;
   margin: 0;
@@ -44,7 +45,6 @@
 @media (min-width: 768px) {
   .title {
     max-width: 80%;
-    font-size: 25pt;
     text-align: center;
   }
 }
