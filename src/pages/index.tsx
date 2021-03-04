@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import { Footer } from '../components/Footer'
 import { Header } from '../components/navigation/Header'
 import { FirstSection } from '../components/section/FirstSection'
 import { FourthSection } from '../components/section/FourthSection'
@@ -20,6 +21,7 @@ export default function Home() {
       <ThirdSection />
       <ProfileSection />
       <FourthSection />
+      <Footer />
     </>
   )
 }
