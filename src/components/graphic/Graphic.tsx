@@ -1,7 +1,7 @@
 import React from 'react'
 import style from '../../styles/components/graphic/Graphic.module.css'
 
-const Graphic: React.FC = () => {
+const Graphic = () => {
   return (
     <div id={style.container}>
       <div className={style.graficoBarras}>

@@ -1,12 +1,11 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styles from '../../styles/components/forms/Button.module.css'
 
 interface IButtonProps {
-  children: ReactNode
   disabled: boolean
 }
 
-function Button({ children, disabled }: IButtonProps): JSX.Element {
+const Button: React.FC = ({ children }, { disabled }: IButtonProps) => {
   return (
     <button disabled={disabled} className={styles.button}>
       {children}
