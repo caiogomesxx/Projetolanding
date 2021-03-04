@@ -16,13 +16,13 @@ Espacamento entre os cards
 /*
 Todos os Cards
 */
-.big_cards {
+.big_ExchangeCardMobile {
   display: none;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.big_cardsMobile {
+.big_cards {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

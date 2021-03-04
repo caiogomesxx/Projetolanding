@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import { Footer } from '../components/Footer'
+import { Footer } from '../components/navigation/Footer'
 import { Header } from '../components/navigation/Header'
 import { FirstSection } from '../components/section/FirstSection'
 import { FourthSection } from '../components/section/FourthSection'

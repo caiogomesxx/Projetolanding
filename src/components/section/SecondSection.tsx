@@ -8,7 +8,7 @@ import { Line } from '../graphic/Line'
 const SecondSection: React.FC = () => {
   return (
     <section id={styles.secondSection}>
-      <div className={styles.triangulo}></div>
+      <div className={styles.triangulo} id="1"></div>
       <div id={styles.secondSectionTitle}>
         <h1>Por que somos os melhores?</h1>
         <h2>

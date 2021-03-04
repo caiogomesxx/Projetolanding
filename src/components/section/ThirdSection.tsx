@@ -4,7 +4,7 @@ import Card from '../cards/Card'
 
 export default function ThirdSection(): JSX.Element {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="2">
       <div className={styles.textContent}>
         <h1 className={styles.title}>Por que investir com o Patinhas?</h1>
         <h2 className={styles.sub}>

@@ -13,7 +13,7 @@ export default function ProfileSection(): JSX.Element {
   const [slide, setSlide] = useState(0)
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="3">
       <h1 className={styles.title}>
         Quem são os responsáveis pelas riquezas do patinhas
       </h1>

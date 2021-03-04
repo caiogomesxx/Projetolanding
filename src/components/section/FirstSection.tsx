@@ -6,7 +6,7 @@ import { ExchangeCard } from '../cards/ExchangeCard'
 
 function FirstSection(): JSX.Element {
   return (
-    <section className={styles.Bodies}>
+    <section className={styles.Bodies} id="0">
       <div className={styles.text_and_cards}>
         <div className={styles.text}>
           <h1>Se torne um patinhas e plante uma mudinha</h1>

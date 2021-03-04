@@ -26,7 +26,7 @@ function FourthSection(): JSX.Element {
 
   return (
     <section id={styles.fourth_section}>
-      <div className={styles.title_container}>
+      <div className={styles.title_container} id="4">
         <h1> Queremos te conhecer !! </h1>
         <h3>
           Preencha o formulário abaixo para nossa empresa e deixe também um

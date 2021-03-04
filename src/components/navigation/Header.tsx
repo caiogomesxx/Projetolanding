@@ -21,9 +21,6 @@ function Header(): JSX.Element {
 
   const classes = useStyles()
   const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
     right: false
   })
 
@@ -40,9 +37,7 @@ function Header(): JSX.Element {
 
   const list = anchor => (
     <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom'
-      })}
+      className={clsx(classes.list)}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -54,9 +49,11 @@ function Header(): JSX.Element {
           'Vantagens',
           'Quem somos',
           'Contato'
-        ].map(text => (
+        ].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemText primary={text} />
+            <a href={`#${index}`}>
+              <ListItemText primary={text} />
+            </a>
           </ListItem>
         ))}
       </List>
@@ -67,11 +64,21 @@ function Header(): JSX.Element {
     <header className={styles.header_body}>
       <img src={LogoIMG} className={styles.logo} />
       <div className={styles.button}>
-        <button className={styles.buttonChild}>Início</button>
-        <button className={styles.buttonChild}>Nossa investidora</button>
-        <button className={styles.buttonChild}>Vantagens</button>
-        <button className={styles.buttonChild}>Quem somos</button>
-        <button className={styles.buttonChild}>Contato</button>
+        <a className={styles.buttonChild} href="#0">
+          Início
+        </a>
+        <a className={styles.buttonChild} href="#1">
+          Nossa investidora
+        </a>
+        <a className={styles.buttonChild} href="#2">
+          Vantagens
+        </a>
+        <a className={styles.buttonChild} href="#3">
+          Quem somos
+        </a>
+        <a className={styles.buttonChild} href="#4">
+          Contato
+        </a>
       </div>
       <div className={styles.drawerButton}>
         <Button onClick={toggleDrawer('right', true)}>
